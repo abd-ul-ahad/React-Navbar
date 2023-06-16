@@ -1,0 +1,87 @@
+@keyframes navLinkAnimation {
+  from {
+    border-bottom: 0px solid var(--logo-blue);
+  }
+  to {
+    border-bottom: 3px solid var(--logo-blue);
+  }
+}
+
+@keyframes navMenuOnAnimation {
+  from {
+    top: 35px;
+    opacity: 0;
+    display: none;
+  }
+  to {
+    top: 49px;
+    opacity: 1;
+    display: block;
+  }
+}
+
+@keyframes navMenuOffAnimation {
+  from {
+    top: 45px;
+    opacity: 1;
+    display: block;
+  }
+  to {
+    top: 35px;
+    opacity: 0;
+    display: none;
+  }
+}
+
+.navLinkAnima {
+  border: 2px solid var(--logo-blue) !important;
+}
+.sublink:hover {
+  color: black !important;
+  background-color: var(--grey);
+}
+
+.activeSubLinkBtn {
+  color: black;
+  background-color: var(--grey);
+}
+
+.handleOnMenu {
+  position: absolute;
+  pointer-events: all;
+  width: 100%;
+  top: 49px;
+}
+
+.handleOffMenu {
+  position: absolute;
+  animation-name: navMenuOffAnimation !important;
+  animation-duration: 12s;
+  width: 100%;
+  top: 35px;
+  opacity: 0;
+  display: none;
+  pointer-events: none;
+}
+
+.noBorderBottom {
+  border: none !important;
+}
+
+.navLinkRemovAnima {
+  border: 2px solid white;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-variant-ligatures: additional-ligatures;
+  color: var(--cds-text-01, #161616);
+  font-size: 1rem;
+}
+
+.navLinkRemovAnima:hover {
+  background-color: var(--grey);
+  border: 2px solid var(--grey);
+}
+
+.colorBlack {
+  color: var(--black) !important;
+}

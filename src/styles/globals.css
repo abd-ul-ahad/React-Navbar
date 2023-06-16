@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"); */
+
+@layer components {
+  /* Navbar sublink style */
+  .subNavLinkStyle {
+    @apply lg:py-1 lg:px-4 lg:cursor-pointer flex justify-between;
+  }
+}
+
+@import "./variables.css";
+/* Universal style or all components */
+*,
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 0px !important;
+  box-sizing: content-box;
+  scroll-behavior: smooth !important;
+  /* font-family: 'IBM Plex Sans','ibm-plex-sans','Helvetica Neue',Arial,sans-serif; */
+}
+
+.colorMain {
+  color: #525252;
+}
+
+.user-select-none {
+  user-select: none !important;
+}
+
+/* adding navbar styles  */
+@import "./Nav.css";
